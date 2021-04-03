@@ -2,3 +2,25 @@
 
 
 # slideshow requires feh to be installed
+
+# get day of week store in DOW variable
+DOW=$(date +%u);
+
+echo $DOW;
+
+case $DOW in
+			1)
+				$FEH_CMD;;
+			2)
+				$FEH_CMD;;
+			3)
+				$FEH_CMD;;
+			4)
+				$FEH_CMD;;
+			5)
+				$FEH_CMD;;
+			6)
+				$FEH_CMD;;
+			7)
+				$FEH_CMD;;
+esac
