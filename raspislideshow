@@ -3,24 +3,24 @@
 
 # slideshow requires feh to be installed
 
+#sleep script to give pie desktop time to load USB after boot
+sleep 30
 # get day of week store in DOW variable
 DOW=$(date +%u);
 
-echo $DOW;
-
 case $DOW in
 			1)
-				$FEH_CMD;;
+				feh /media/pi/AndrewUSB/Pictures/family --recursive --fullscreen --auto-zoom --slideshow-delay 5 --image-bg black --hide-pointer --auto-rotate;;
 			2)
-				$FEH_CMD;;
+				feh /media/pi/AndrewUSB/Pictures/KatiePictures --recursive --fullscreen --auto-zoom --slideshow-delay 5 --image-bg black --hide-pointer --auto-rotate;;
 			3)
-				$FEH_CMD;;
+				feh /media/pi/AndrewUSB/Pictures/family --recursive --fullscreen --auto-zoom --slideshow-delay 5 --image-bg black --hide-pointer --auto-rotate;;
 			4)
-				$FEH_CMD;;
+				feh /media/pi/AndrewUSB/Pictures/Katie_and_drew_adventures --recursive --fullscreen --auto-zoom --slideshow-delay 5 --image-bg black --hide-pointer --auto-rotate;;
 			5)
-				$FEH_CMD;;
+				feh /media/pi/AndrewUSB/Pictures/family --recursive --fullscreen --auto-zoom --slideshow-delay 5 --image-bg black --hide-pointer --auto-rotate;;
 			6)
-				$FEH_CMD;;
+				feh /media/pi/AndrewUSB/Pictures/mompictures --recursive --fullscreen --auto-zoom --slideshow-delay 5 --image-bg black --hide-pointer --auto-rotate;;
 			7)
-				$FEH_CMD;;
+				feh /media/pi/AndrewUSB/Pictures/Katie_and_drew_adventures --recursive --fullscreen --auto-zoom --slideshow-delay 5 --image-bg black --hide-pointer --auto-rotate;;
 esac
